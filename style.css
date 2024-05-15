@@ -1,12 +1,12 @@
 body {
-    background-color: #068368;
+    background-color: #ABF1FA;
     margin: 0;
     font-family: "Inter", sans-serif;
     font-style: normal;
 }
 
 .header {
-    background-color: #0F6A54;
+    background-color: #10867b;
     margin: 0;
     height: 70px;
     width: 100%;
@@ -20,28 +20,36 @@ body {
 .header .logo {
     color: #000E0D;
     justify-content: start;
-    margin-right: 500px;
+    margin-right: 250px;
 }
 
 .header a {
     padding: 15px;
-    color: #000E0D;
-    font-size: 18px;
+    margin-right: 20px;
+    color: #AC916D;
+    font-size: 25px;
     text-decoration: none;
     display: flex;
 }
 
 a:hover {
-    color: #2EFFBF;
+    color: #151D4D;
+    font-weight: bold;
 }
 
 #a_cadastro {
-    margin-right: 15px;
-    color: #2EFFBF;
-    background-color: #000628;
+    margin-right: 25px;
+    color: #151D4D;
+    font-weight: bold;
+    background-color: #AC916D;
     border-radius: 10px;
     height: 10px;
     align-items: center;
+}
+
+#a_cadastro:hover{
+    background-color: #151D4D;
+    color: #AC916D;
 }
 
 .page {
@@ -50,21 +58,46 @@ a:hover {
 }
 
 .infographic {
+    background-image: url("./assets/mapaMundi.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
     color: #000E0D;
     margin-top: 40px;
+    display: flex;
     align-items: center;
     text-align: center;
 }
 
-.infographic h1 {
-    margin-top: 80px;
-    margin-bottom: 40px;
+.txt-infographic{
+    position: absolute;
+    color: aliceblue;
+    text-align: left;
+    padding-top: 70vh;
+    padding-left: 40px;
+    font-size: 31px;
+    width: 40vw;
+    height: 100%;
+    margin-top: 8rem;
+}
+
+.txt-infographic span {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0.5vw;
+    background-color: #6DC8BF;
     color: #000E0D;
 }
 
+
+
+
 .infographic img {
-    height: 400px;
-    border-radius: 20px;
+    height: 650px;
+    width: 100%;
 }
 
 .article {
@@ -72,6 +105,10 @@ a:hover {
     flex-direction: row;
     align-items: center;
     margin-top: 80px;
+}
+
+.artc_text h1{
+    color: #151D4D;
 }
 
 .artc_text {
@@ -85,12 +122,12 @@ a:hover {
 }
 
 .artc_text a {
-    color: #2EFFBF;
-    background-color: #000628;
+    color: white;
+    background-color: #6B6243;
     margin-top: 20px;
     text-decoration: none;
     height: 45px;
-    width: 110px;
+    width: 130px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -100,14 +137,15 @@ a:hover {
 .article img {
     border-radius: 20px;
     height: 420px;
-    width: 470px;
+    width: 600px;
 }
 
 .article2 {
+    background: linear-gradient(rgba(171,241,250,1) 0%, rgba(87,176,153,1) 100%);
+    height: 500px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-top: 80px;
 }
 
 .article2 img {
@@ -116,14 +154,47 @@ a:hover {
     width: 470px;
 }
 
+.article3 {
+    background-image: url("./assets/coexist.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.artc_text3 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-right: 100px;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+
+.artc_text3 a {
+    color: white;
+    background-color: #AC916D;
+    margin-top: 20px;
+    text-decoration: none;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .interaction {
+    background: linear-gradient(rgba(171,241,250,1) 0%, rgba(87,176,153,1) 100%);
     height: 600px;
-    width: 600px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 380px;
 }
 
 .interaction span {
@@ -133,7 +204,7 @@ a:hover {
 }
 
 .footer {
-    background-color: #0F6A54;
+    background-color: #10867b;
     padding: 0;
     margin: 0;
     height: 75px;
