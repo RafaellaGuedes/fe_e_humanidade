@@ -92,7 +92,7 @@
         display: flex;
         flex-direction: column;
         box-shadow: 1rem 1rem 20px 0 rgba(0, 0, 0, 0.5);
-        
+
         .input_box {
             margin-bottom: 30px;
             font-size: 20px;
@@ -140,7 +140,7 @@
         margin-top: 30px;
         justify-content: space-between;
 
-        a{
+        a {
             color: #455750;
             font-size: 20px;
             text-decoration: none;

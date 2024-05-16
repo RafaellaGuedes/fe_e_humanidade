@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    background-color: #10867b;
+    background-color: #88AB8E;
     margin: 0;
     height: 70px;
     width: 100%;
@@ -15,50 +15,62 @@ body {
     align-items: center;
     justify-content: end;
     position: fixed;
+    z-index: 10;
+    box-shadow: 0rem 1rem 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .header .logo {
-    color: #000E0D;
+    color: #36443f;
     justify-content: start;
-    margin-right: 250px;
+}
+
+.navbar {
+    margin-left: 250px;
+    display: flex;
+    flex-direction: row;
+    width: 58%;
+    justify-content: center;
+    align-items: center;
 }
 
 .header a {
     padding: 15px;
     margin-right: 20px;
-    color: #AC916D;
-    font-size: 25px;
+    color: #EEE7DA;
+    font-size: 23px;
     text-decoration: none;
     display: flex;
 }
 
 a:hover {
-    color: #151D4D;
+    color: #8ad3dd;
     font-weight: bold;
 }
 
 #a_cadastro {
     margin-right: 25px;
-    color: #151D4D;
+    color: #EEE7DA;
     font-weight: bold;
-    background-color: #AC916D;
+    background-color: #455750;
     border-radius: 10px;
     height: 10px;
     align-items: center;
 }
 
-#a_cadastro:hover{
-    background-color: #151D4D;
-    color: #AC916D;
+#a_cadastro:hover {
+    color: #8ad3dd;
 }
 
 .page {
+    background-image: url("./assets/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
 }
 
 .infographic {
-    background-image: url("./assets/mapaMundi.jpg");
+    background-image: url("./assets/mapaMundi.png");
     background-size: 100% 100%;
     background-position: center;
     width: 100%;
@@ -71,8 +83,7 @@ a:hover {
     text-align: center;
 }
 
-.txt-infographic{
-    position: absolute;
+.txt-infographic {
     color: aliceblue;
     text-align: left;
     padding-top: 70vh;
@@ -80,7 +91,7 @@ a:hover {
     font-size: 31px;
     width: 40vw;
     height: 100%;
-    margin-top: 8rem;
+    margin-top: 250px;
 }
 
 .txt-infographic span {
@@ -91,9 +102,6 @@ a:hover {
     background-color: #6DC8BF;
     color: #000E0D;
 }
-
-
-
 
 .infographic img {
     height: 650px;
@@ -107,8 +115,8 @@ a:hover {
     margin-top: 80px;
 }
 
-.artc_text h1{
-    color: #151D4D;
+.artc_text h1 {
+    color: #36443f;
 }
 
 .artc_text {
@@ -123,7 +131,7 @@ a:hover {
 
 .artc_text a {
     color: white;
-    background-color: #6B6243;
+    background-color: #36443f;
     margin-top: 20px;
     text-decoration: none;
     height: 45px;
@@ -141,7 +149,6 @@ a:hover {
 }
 
 .article2 {
-    background: linear-gradient(rgba(171,241,250,1) 0%, rgba(87,176,153,1) 100%);
     height: 500px;
     display: flex;
     flex-direction: row-reverse;
@@ -158,6 +165,7 @@ a:hover {
     background-image: url("./assets/coexist.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 1rem 1rem 20px 0 rgba(1rem, 1rem, 0, 0.5);
     height: 500px;
     display: flex;
     flex-direction: row-reverse;
@@ -188,23 +196,45 @@ a:hover {
 }
 
 .interaction {
-    background: linear-gradient(rgba(171,241,250,1) 0%, rgba(87,176,153,1) 100%);
+    background-image: url("./assets/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 600px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.interaction span {
-    color: white;
-    font-size: 20px;
-    text-align: center;
+.interaction img {
+    width: 45vw;
+    height: 100vh;
+    position: absolute;
+    margin-right: 30px;
 }
 
+.game_span {
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 30px;
+    background-color: rgba(136, 171, 142, 0.95);
+    width: 1200px;
+    height: 300px;
+    margin-top: 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    font-weight: 600;
+}
+
+#ga {
+    margin-right: 32vw;
+    }
+
 .footer {
-    background-color: #10867b;
+    background-color: #88AB8E;
     padding: 0;
     margin: 0;
     height: 75px;
