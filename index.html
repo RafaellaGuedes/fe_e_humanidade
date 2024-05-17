@@ -14,30 +14,26 @@
 
 <body>
 
-    <div class="header">
-        <div class="logo">
-            <h1>Fé e Humanidade</h1>
-        </div>
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="#article">Artigos</a>
-            <a href="#game">Game</a>
-            <a href="">Contato</a>
-            <a href="login.html">Login</a>
-            <a href="cadastro.html" id="a_cadastro">Cadastro</a>
-        </div>
-    </div>
-
+    
     <div class="page">
-
-        <div class="infographic">
-                <span class="txt-infographic">
-                    A FÉ É A ÂNCORA <br>QUE MANTÉM A ALMA FIRME,<br> MESMO DIANTE <br> DAS <span
-                        class="storm">TEMPESTADES DA VIDA</span>
-                </span>
+        
+        <div class="map">
+            <span class="txt-map">
+                A FÉ É A ÂNCORA <br>QUE MANTÉM A ALMA FIRME,<br> MESMO DIANTE <br> DAS <span
+                class="storm">TEMPESTADES DA VIDA</span>
+            </span>
         </div>  
-
-        <div class="article" id="article">
+        
+        <nav id="navbar">
+                <h1>Fé e Humanidade</h1>
+                <a href="index.html">Home</a>
+                <a href="#article" onclick="scrollToSection('article')">Artigos</a>
+                <a href="#game">Game</a>
+                <a href="">Contato</a>
+                <a href="login.html">Login</a>
+                <a href="cadastro.html" id="a_cadastro">Cadastro</a>
+        </nav>
+        <section class="article" id="article">
             <div class="artc_text">
                 <h1>A necessidade do ser humano pela Fé</h1>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nesciunt fuga esse iusto autem
@@ -46,7 +42,7 @@
                 <a href="./article1.html"><b>SAIBA MAIS</b></a>
             </div>
             <img src="./assets/Bíblia.png" alt="Livro Sagrado">
-        </div>
+        </section>
 
         <div class="article2">
             <div class="artc_text">
@@ -69,7 +65,7 @@
             </div>
         </div>
 
-        <div class="interaction" id="game">
+        <div class="game" id="game">
          <img src="./assets/game.png" alt="Game Religiões">
          <div class="game_span">
              <span id="ga">GA</span><span id="me">ME</span>
@@ -89,3 +85,25 @@
 </body>
 
 </html>
+
+<script>
+
+    function scrollToSection(sectionId){
+        var section = document.getElementById(sectionId)
+
+        section.scrollIntoView({ behavior: 'smooth', block: 'start'})
+    };
+
+    window.addEventListener('scroll', function(){
+        var navbar = document.getElementById('navbar');
+        var navbarHeight = navbar.offsetHeight;
+        var scrollPosition = window.scrollY
+
+        if(scrollPosition >= navbarHeight){
+            navbar.classList.add('fixed')
+        }else(
+            navbar.classList.remove('fixed')
+        )
+    })
+
+</script>
