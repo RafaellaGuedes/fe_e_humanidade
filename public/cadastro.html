@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_cadastro.css">
+    <link rel="stylesheet" href="./css/style_cadastro.css">
+    <script src="./js/cadastro.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@100..900&display=swap"
@@ -19,7 +20,7 @@
             <h1>Fé e Humanidade</h1>
         </div>
         <div class="navbar">
-            <a href="index.html">Home</a>
+            <a href="main.html">Home</a>
             <a href="#article">Artigos</a>
             <a href="#game">Game</a>
             <a href="">Contato</a>
@@ -38,35 +39,42 @@
 
                 <div class="conjuntoA">
                     <div class="input_box">
-                        <span>Nome Completo:</span> <br> <input type="text" id="input_nome">
+                        <span>Nome Completo:</span> <br> <input type="text" id="input_nome"
+                            placeholder="Digite seu nome completo">
                     </div>
-    
+
                     <div class="input_box">
-                        <span>Data de Nascimento:</span> <br> <input type="text" id="input_data">
+                        <span>Data de Nascimento:</span> <br> <input type="text" id="input_data"
+                            placeholder="Ex.: 00/00/0000">
                     </div>
-    
+
                     <div class="input_box">
-                        <span>Telefone:</span> <br> <input type="text" id="input_email">
+                        <span>Telefone:</span> <br> <input type="text" id="input_telefone"
+                            placeholder="Ex.: (00)00000-0000">
                     </div>
                 </div>
 
                 <div class="conjuntoB">
                     <div class="input_box">
-                        <span>E-mail:</span> <br> <input type="text" id="input_email">
+                        <span>E-mail:</span> <br> <input type="text" id="input_email" placeholder="Digite seu email">
                     </div>
                     <div class="input_box">
-                        <span>Senha:</span> <br> <input type="text" id="input_senha">
+                        <span>Senha:</span> <br> <input type="password" id="input_senha" placeholder="Crie uma senha">
                     </div>
-    
+
                     <div class="input_box">
-                        <span>Confirmar Senha:</span> <br> <input type="text" id="input_senha">
+                        <span>Confirmar Senha:</span> <br> <input type="password" id="input_conf_senha"
+                            placeholder="Confirmar sua senha">
                     </div>
                 </div>
 
             </div>
 
+            <span id="aviso_senha"> * A senha deve conter pelo menos 8 caracteres, <br> sendo 1 número e 1 caractere
+                especial(!@#$%^&*)</span>
+
             <div class="button_cadastro">
-                <a href="#">Cadastrar</a>
+                <button onclick="registrar()">Cadastrar</button>
             </div>
 
             <div class="button_login">

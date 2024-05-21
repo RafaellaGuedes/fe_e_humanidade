@@ -1,0 +1,188 @@
+body {
+    background-color: #ABF1FA;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+.header {
+    background-color: #88AB8E;
+    margin: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    position: fixed;
+    box-shadow: 0rem 1rem 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header .logo {
+    color: #36443f;
+    justify-content: start;
+}
+
+.navbar {
+    margin-left: 250px;
+    display: flex;
+    flex-direction: row;
+    width: 58%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header a {
+    padding: 15px;
+    margin-right: 20px;
+    color: #EEE7DA;
+    font-size: 23px;
+    text-decoration: none;
+    display: flex;
+}
+
+a:hover {
+    color: #8ad3dd;
+    font-weight: bold;
+}
+
+#a_cadastro {
+    margin-right: 25px;
+    color: #EEE7DA;
+    font-weight: bold;
+    background-color: #455750;
+    border-radius: 10px;
+    height: 10px;
+    align-items: center;
+}
+
+#a_cadastro:hover {
+    color: #8ad3dd;
+}
+
+.page {
+    background-image: url("../assets/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.page span {
+    width: 850px;
+    text-align: center;
+    color: 455750;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.box_cadastro {
+    background-color: #88AB8E;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 600px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1rem 1rem 20px 0 rgba(0, 0, 0, 0.5);
+
+    .input_box {
+        margin-bottom: 30px;
+        font-size: 20px;
+        text-align: left;
+        
+        input {
+            height: 30px;
+            width: 250px;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: #EEE7DA;
+            border-style: solid;
+            border-color: #EEE7DA;
+        }
+        
+    }
+    
+}
+
+.box_cadastro h1 {
+    font-size: 40px;
+    margin-top: 0;
+    color: #455750;
+    margin-bottom: 30px;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#aviso_senha {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.button_cadastro button {
+    background-color: #10867b;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: hidden;
+    text-align: center;
+    justify-content: center;
+    color: #EEE7DA;
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.button_login {
+    margin-top: 20px;
+    justify-content: space-between;
+
+    a {
+        color: #EEE7DA;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+}
+
+
+.footer {
+    background-color: #10867b;
+    padding: 0;
+    margin: 0;
+    height: 75px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer .logo {
+    color: #000E0D;
+    justify-content: start;
+    margin-left: 60px;
+}
+
+.contacts {
+    width: 500px;
+    text-align: center;
+    margin-left: 500px;
+    font-size: 20px;
+}
+

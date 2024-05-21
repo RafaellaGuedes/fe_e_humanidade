@@ -1,5 +1,5 @@
     body {
-        background-color: #ABF1FA;
+        background-color: #C8BAAE;
         margin: 0;
         font-family: "Inter", sans-serif;
         font-style: normal;
@@ -61,7 +61,7 @@
     }
 
     .page {
-        background-image: url("./assets/fundo.jpg");
+        background-image: url("../assets/fundo.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -118,7 +118,7 @@
         margin-bottom: 30px;
     }
 
-    .button_login {
+    .button_login button {
         background-color: #10867b;
         width: 200px;
         height: 40px;
@@ -128,11 +128,9 @@
         flex-direction: column;
         text-align: center;
         justify-content: center;
-    }
-
-    .button_login a {
+        align-items: center;
         color: #EEE7DA;
-        font-size: 20px;
+        font-size: 25px;
         text-decoration: none;
     }
 
