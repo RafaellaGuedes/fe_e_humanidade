@@ -54,7 +54,7 @@ function login() {
 
         if (resposta.ok) {
             console.log(resposta);
-            window.location = "game.html"
+            window.location = "./religioes.html"
             resposta.json().then(json => {
                 console.log(json);
                 console.log(JSON.stringify(json));

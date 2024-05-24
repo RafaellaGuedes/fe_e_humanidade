@@ -19,11 +19,11 @@ function start() {
     timer = setInterval(() => {
 
         if (!pause) {
-            var minutos = Math.floor(sec / 60); // Calcula os minutos
-            var segundos = sec % 60; // Calcula os segundos
+            var minutos = Math.floor(sec / 60);
+            var segundos = sec % 60;
 
-            var minutosFormatados = minutos < 10 ? '0' + minutos : minutos; // Formata os minutos com zero à esquerda, se necessário
-            var segundosFormatados = segundos < 10 ? '0' + segundos : segundos; // Formata os segundos com zero à esquerda, se necessário
+            var minutosFormatados = minutos < 10 ? '0' + minutos : minutos;
+            var segundosFormatados = segundos < 10 ? '0' + segundos : segundos; 
 
             timer_txt.innerHTML = `${minutosFormatados}:${segundosFormatados}`;
 
@@ -79,7 +79,7 @@ function game_over() {
     game_board.style.display = 'none';
     over_box.style.display = 'block';
 
-    religion_exp.innerHTML = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi omnis quidem eveniet, illum deserunt placeat perspiciatis earum provident veritatis. Cum dolor dolorem commodi. Animi consectetur ullam minima aliquid amet maxime, sequi blanditiis aspernatur facilis, possimus exercitationem sint dolores adipisci nisi perspiciatis commodi quas officiis, voluptates inventore facere labore non vitae! Impedit quisquam dolores nostrum provident ducimus natus sint praesentium adipisci odit deserunt non magnam laboriosam voluptatibus ipsum quod et quo, amet soluta placeat atque esse tempore fuga porro! Id nostrum rem incidunt laboriosam natus recusandae neque vero quod tempore, soluta cumque fugit quas facilis culpa voluptatem tempora mollitia qui quam."
+    religion_exp.innerHTML = "O hinduísmo é uma antiga tradição religiosa que se originou na Índia, e sua história remonta a milhares de anos, tendo suas raízes nas antigas tradições védicas. Essa religião é dividida em várias tradições e escolas de pensamento. O hinduísmo é caracterizado pela pluralidade de deuses e deusas, rituais coloridos e significativos, e uma rica tradição literária de escrituras sagradas. Os principais objetivos do hinduísmo são alcançar a libertação espiritual (moksha), seguir o dever moral (dharma) e buscar a prosperidade material (artha)."
 
 }
 

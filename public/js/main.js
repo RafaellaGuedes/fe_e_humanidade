@@ -15,3 +15,8 @@
             navbar.classList.remove('fixed')
         )
     })
+
+
+    function redirecionar() {
+        window.location.href = "./game.html";
+    }
