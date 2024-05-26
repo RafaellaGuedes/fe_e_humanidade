@@ -4,43 +4,6 @@ function login() {
     var email = input_email.value;
     var senha = input_senha.value;
 
-    // if (email == "" || senha == "") {
-
-    //     alert("Preencha todos os campos para continuar!")
-
-    // } else {
-
-    //     for (var i = tentativas; i > 0; i--) {
-
-    //         if (email != "" || senha != "") {
-
-    //             tentativas--
-    //             i = tentativas;
-
-    //             alert(`Login inválido! Restam ${i} tentativas`);
-
-    //         } else if (email == "" && senha == "") {
-    //             window.location.href = 'game.html';
-
-    //             input_email = '';
-    //             input_senha = '';
-
-    //             tentativas = 3;
-
-    //             break
-    //         }
-
-    //     }
-
-    //     if (tentativas == 0) {
-
-    //         alert("Você não tem mais tentativas.");
-
-    //         window.location.href = 'cadastro.html';
-    //     }
-
-    // }
-
     fetch("/usuarios/autenticar", {
         method: "POST",
         headers: {

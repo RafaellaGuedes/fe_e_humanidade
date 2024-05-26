@@ -24,17 +24,17 @@ body {
 }
 
 .navbar {
-    margin-left: 250px;
+    margin-left: 240px;
     display: flex;
     flex-direction: row;
-    width: 58%;
+    width: 60%;
     justify-content: center;
     align-items: center;
 }
 
 .header a {
-    padding: 15px;
-    margin-right: 20px;
+    padding: 10px;
+    margin-right: 15px;
     color: #EEE7DA;
     font-size: 23px;
     text-decoration: none;
@@ -46,18 +46,21 @@ a:hover {
     font-weight: bold;
 }
 
-#a_cadastro {
+#main {
     margin-right: 25px;
     color: #EEE7DA;
     font-weight: bold;
     background-color: #455750;
     border-radius: 10px;
-    height: 10px;
+    height: 22px;
+    width: 80px;
+    justify-content: center;
     align-items: center;
 }
 
-#a_cadastro:hover {
+#main:hover {
     color: #8ad3dd;
+    transform: scale(1.1);
 }
 
 .page {
@@ -147,6 +150,10 @@ a:hover {
     margin-top: 20px;
 }
 
+button:hover {
+    transform: scale(1.1);
+}
+
 .button_login {
     margin-top: 20px;
     justify-content: space-between;
@@ -159,6 +166,9 @@ a:hover {
 
 }
 
+.button_login a:hover {
+    transform: scale(1.1);
+}
 
 .footer {
     background-color: #10867b;

@@ -79,10 +79,16 @@ a:hover {
     width: 700px;
     height: 400px;
     margin-left: 50px;
+    font-size: 25px;
+    color: #36443f;
+    font-weight: bold;
 }
 
 .religion_graphic {
     width: 500px;
     height: 350px;
     margin-left: 80px;
+    font-size: 25px;
+    color: #36443f;
+    font-weight: bold;
 }
