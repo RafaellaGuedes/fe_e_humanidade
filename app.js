@@ -17,7 +17,6 @@ var usuarioRouter = require("./src/routes/usuarios");
 var religioesRouter = require("./src/routes/religioes");
 var scoreRouter = require("./src/routes/score");
 
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));

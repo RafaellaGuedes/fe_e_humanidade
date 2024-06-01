@@ -1,6 +1,8 @@
 function confirm() {
     var religiaoVar = document.getElementById('religion_select').value;
-    console.log("🐵" + religiaoVar);
+    var idUsuarioVar = sessionStorage.ID_USUARIO;
+    const momentos = new Date().toISOString();
+    const momento = momentos.split('.')[0].replace('T', ' ');
 
     fetch("/religioes/cadastrar_religiao", {
         method: "POST",
@@ -8,7 +10,9 @@ function confirm() {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            religiaoServer: religiaoVar
+            religiaoServer: religiaoVar,
+            idUsuarioServer: idUsuarioVar,
+            momentoServer: momento
         })
     }).then(function (resposta) {
 

@@ -130,6 +130,9 @@ function restart() {
 }
 
 function score() {
+    var idUsuarioVar = sessionStorage.ID_USUARIO;
+    const momentos = new Date().toISOString();
+    const momento = momentos.split('.')[0].replace('T', ' ');
 
     fetch("/score/cadastrar_score", {
         method: "POST",
@@ -137,7 +140,9 @@ function score() {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            pontuacaoServer: pontuacaoVar
+            pontuacaoServer: pontuacaoVar,
+            idUsuarioServer: idUsuarioVar,
+            momentoServer: momento
         })
     }).then(function (resposta) {
 
@@ -150,4 +155,5 @@ function score() {
     }).catch(function (erro) {
         console.log('Erro no fetch:', erro);
     })
+    console.log(pontuacaoVar, idUsuarioVar, momento);
 }

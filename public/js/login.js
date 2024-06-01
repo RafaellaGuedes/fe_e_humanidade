@@ -1,5 +1,3 @@
-// var tentativas = 3;
-
 function login() {
     var email = input_email.value;
     var senha = input_senha.value;
@@ -17,14 +15,13 @@ function login() {
 
         if (resposta.ok) {
             console.log(resposta);
-            window.location = "./religioes.html"
-            resposta.json().then(json => {
-                console.log(json);
-                console.log(JSON.stringify(json));
-                sessionStorage.EMAIL_USUARIO = json.email;
-                sessionStorage.NOME_USUARIO = json.nome;
+            resposta.json().then(usuario => {
+                sessionStorage.EMAIL_USUARIO = email;
+                sessionStorage.NOME_USUARIO = usuario[0].nomeCompleto;
+                sessionStorage.ID_USUARIO = usuario[0].idUsuario;
             });
-
+            
+            window.location = "./religioes.html"
         } else {
 
             console.log("Houve um erro ao tentar realizar o login!");

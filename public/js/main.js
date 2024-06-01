@@ -18,5 +18,5 @@
 
 
     function redirecionar() {
-        window.location.href = "./game.html";
+        window.location.href = "./login.html";
     }

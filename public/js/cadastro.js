@@ -63,7 +63,7 @@ function registrar() {
   
       if (resposta.ok) {
         setTimeout(() => {
-          window.location = "game.html";
+          window.location = "login.html";
         }, "2000");
   
       } else {

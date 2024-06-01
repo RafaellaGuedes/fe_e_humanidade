@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style_dashboard.css">
-    <script src="./js/login.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@100..900&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./js/dashboard.js"></script>
     <title>Dashboard | Fé e Humanidade</title>
 </head>
 
@@ -21,19 +21,19 @@
             <h1>Fé e Humanidade</h1>
         </div>
         <div class="navbar">
-            <a href="./main.html">Home</a>
-            <a href="index.html#article">Artigos</a>
+            <a href="religioes.html">Religiões</a>
             <a href="game.html">Game</a>
             <a href="">Contato</a>
-            <a href="login.html">Login</a>
-            <a href="cadastro.html" id="a_cadastro">Cadastro</a>
+            <a href="index.html" id="main">Voltar</a>
         </div>
     </div>
 
     <div class="page">
 
         <div class="score_graphic">
-            <span>MÉDIA DE PONTUAÇÃO NO GAME:</span>
+            <div id="div_usuario">
+                <span>HISTÓRICO DE PONTUAÇÃO DE <br> <span id="nomeUsuario"></span>:</span>
+            </div>
             <canvas id="score_canvas"></canvas>
         </div>
 
@@ -47,5 +47,3 @@
 </body>
 
 </html>
-
-<script src="./js/dashboards.js"></script>
