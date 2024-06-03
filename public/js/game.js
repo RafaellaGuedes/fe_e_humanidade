@@ -2,7 +2,9 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const game_board = document.querySelector('.game_board');
 const start_box = document.querySelector('.start_box');
+const exp_box = document.querySelector('.exp_box');
 const over_box = document.querySelector('.over_box');
+const page = document.querySelector('.page');
 const religion_name = document.getElementById('religion_name');
 const religion_exp = document.getElementById('religion_exp');
 var sec = 0;
@@ -28,6 +30,8 @@ function start() {
     pause = false;
     var game_over_called = false;
     game_board.style.display = 'block';
+    page.style.flexDirection = 'column';
+    exp_box.style.display = 'none';
     start_box.style.display = 'none';
     over_box.style.display = 'none';
 

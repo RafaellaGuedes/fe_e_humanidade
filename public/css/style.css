@@ -150,6 +150,7 @@ a:hover {
 
 .artc_text h1 {
     color: #36443f;
+    font-size: 45px;
 }
 
 .artc_text {
@@ -201,15 +202,16 @@ a:hover {
 }
 
 .article2 .cultureA {
-    font-size: 50px;
+    font-size: 40px;
     color: #36443f;
     font-weight: 600;
 }
 
 .article2 .cultureB {
-    font-size: 70px;
+    font-size: 60px;
     color: #36443f;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .religious_symbols {
@@ -246,6 +248,10 @@ a:hover {
     align-items: center;
 }
 
+.artc_text3 h1 {
+    font-size: 40px;
+}
+
 .artc_text3 a {
     color: white;
     background-color: #AC916D;
@@ -275,6 +281,7 @@ a:hover {
     height: 100vh;
     position: absolute;
     margin-right: 30px;
+    margin-top: 35px;
 }
 
 .game_span {
@@ -290,8 +297,9 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-size: 200px;
+    color: #0d1110;
     font-weight: 600;
-    box-shadow: 0rem 1rem 20px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0rem 1rem 20px 0 rgba(0, 0, 0, 0.651);
 }
 
 #ga {
@@ -300,7 +308,7 @@ a:hover {
 }
 
 .about_me {
-    background-image: linear-gradient(to right, #EEE7DA, #D8D1C6, #C8BAAE, #B8A394, #A89C7A);
+    background-image: linear-gradient(to right, #EEE7DA, #D8D1C6, #C8BAAE, #b8a294, #a8947a);
     height: 500px;
     display: flex;
     flex-direction: row;
@@ -327,6 +335,42 @@ a:hover {
     flex-direction: column;
     text-align: center;
     color: #0d1110;
+}
+
+.onu {
+    background-image: url("../assets/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.onu_img {
+    width: 90%;
+    height: 90%;
+}
+
+.onu_img img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.616);
+}
+
+.onu_txt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #0d1110;
+}
+
+.onu_txt h1 {
+    font-size: 35px;
+    color: #455750;
 }
 
 .footer {

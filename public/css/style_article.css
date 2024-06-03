@@ -20,14 +20,13 @@ body {
 
 .header .logo {
     color: #36443f;
-    justify-content: start;
+    margin-right: 200px;
 }
 
 .navbar {
-    margin-left: 250px;
+    margin-left: 90px;
     display: flex;
     flex-direction: row;
-    width: 58%;
     justify-content: center;
     align-items: center;
 }

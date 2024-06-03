@@ -71,10 +71,30 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     align-items: center;
     height: 100vh;
+}
+
+.exp_box {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 40%;
+    padding: 55px;
+}
+
+.exp_box h2{
+    font-size: 40px;
+    color: #455750;
+    margin-bottom: 50px;
+}
+
+.exp_box span {
+    font-size: 20px;
+    color: #0d1110;
+    margin-bottom: 20px;
 }
 
 .start_box {
@@ -92,7 +112,7 @@ a:hover {
     display: block;
     position: absolute;
     top: 83%;
-    left: 43%;
+    left: 60%;
     background-color: #67b874;
     width: 250px;
     height: 60px;

@@ -108,16 +108,29 @@ function plotarReligiao(resposta) {
 
     let labels = [];
 
+    let borderColors = [];
+
     let dados = {
         labels: labels,
         datasets: [{
-            label: 'Usuários',
+            label: 'Quantidade de Usuários',
             data: [],
             fill: false,
-            borderColor: 'rgb(0,255,127)',
+            borderColor: borderColors,
             tension: 0.1
         }]
     };
+
+    const colorPalette = [
+        'rgb(255, 99, 132)', 
+        'rgb(54, 162, 235)', 
+        'rgb(255, 206, 86)', 
+        'rgb(75, 192, 192)', 
+        'rgb(153, 102, 255)', 
+        'rgb(255, 159, 64)',
+        'rgb(0, 255, 127)', 
+        'rgb(255, 0, 255)'
+    ];
 
     console.log('----------------------------------------------')
     console.log('Estes dados foram recebidos pela funcao "obterDadosGrafico" e passados para "plotarGrafico":')
@@ -127,7 +140,9 @@ function plotarReligiao(resposta) {
         var registro = resposta[i];
         labels.push(registro.religiao);
         dados.datasets[0].data.push(registro.quantidade);
-        console.log(resposta[i]);
+
+        let colorIndex = i % colorPalette.length;
+        borderColors.push(colorPalette[colorIndex]);
     }
 
     console.log('----------------------------------------------')
@@ -141,6 +156,13 @@ function plotarReligiao(resposta) {
     const config = {
         type: 'bar',
         data: dados,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
     };
     
     let myChart2 = new Chart(
