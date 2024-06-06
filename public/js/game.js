@@ -84,7 +84,7 @@ function start() {
 
 
 var name_religion = [
-    "protestantismo",
+    "Protestantismo",
     "Catolicismo",
     "Candomblé",
     "Espiritismo",

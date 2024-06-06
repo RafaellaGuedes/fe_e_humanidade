@@ -117,6 +117,7 @@ function plotarReligiao(resposta) {
             data: [],
             fill: false,
             borderColor: borderColors,
+            backgroundColor: borderColors,
             tension: 0.1
         }]
     };

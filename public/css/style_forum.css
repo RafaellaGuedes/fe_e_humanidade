@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+.header {
+    background-color: #88AB8E;
+    margin: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    box-shadow: 0rem 1rem 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header .logo {
+    color: #36443f;
+    justify-content: start;
+}
+
+.navbar {
+    margin-left: 270px;
+    display: flex;
+    flex-direction: row;
+    width: 58%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header a {
+    padding: 15px;
+    margin-right: 20px;
+    color: #EEE7DA;
+    font-size: 23px;
+    text-decoration: none;
+    display: flex;
+}
+
+a:hover {
+    color: #8ad3dd;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+#a_cadastro {
+    background-color: #455750;
+    width: 120px;
+    height: 38px;
+    margin-right: 25px;
+    color: #EEE7DA;
+    font-weight: bold;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#a_cadastro:hover {
+    color: #8ad3dd;
+}
+
+.page {
+    background-image: url("../assets/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* height: 88.6vh; */
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment {
+    background-color: rgba(238, 231, 218, 0.8);
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.comment input {
+    padding: 20px;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 20px;
+}
+
+.comment .button {
+    display: flex;
+    justify-content: end;
+}
+
+.comment button {
+    background-color: #88ab8e;
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+button:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.comment span {
+    margin-top: 26px;
+    margin-right: 355px;
+    font-size: 17px;
+}
+
+.comment_section {
+    background-color: rgba(136, 171, 142, 0.5);
+    width: 90%;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+}
