@@ -19,12 +19,8 @@ router.post("/publicar/:idUsuario", function (req, res) {
     comentariosController.publicar(req, res);
 });
 
-// router.put("/editar/:idComentario", function (req, res) {
-//     comentariosController.editar(req, res);
-// });
-
-// router.delete("/deletar/:idComentario", function (req, res) {
-//     comentariosController.deletar(req, res);
-// });
+router.delete("/deletar/:idComentario", function (req, res) {
+    comentariosController.deletar(req, res);
+});
 
 module.exports = router;
