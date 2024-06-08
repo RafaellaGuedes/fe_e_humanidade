@@ -16,7 +16,7 @@ var indexRouter = require("./src/routes/index");
 var usuarioRouter = require("./src/routes/usuarios");
 var religioesRouter = require("./src/routes/religioes");
 var scoreRouter = require("./src/routes/score");
-var comentariosRouter = require("./scr/routes/comentarios");
+var comentariosRouter = require("./src/routes/comentarios");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

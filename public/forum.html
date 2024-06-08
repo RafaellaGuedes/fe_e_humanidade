@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style_forum.css">
-    <script src="./js/main.js"></script>
+    <script src="./js/forum.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@100..900&display=swap"
@@ -31,28 +31,31 @@
 
     <div class="page">
 
+        <h1>Publicar um comentário</h1>
         <div class="comment">
-            <span class="name">Nome Usuário</span>
-            <input id="input_comment" placeholder="Escreva seu comentário">
-            <div class="button">
-            <span>Por favor, evite comentários ofensivos. Este espaço valoriza o respeito mútuo.</span>
-            <button onclick="send()">Enviar</button>
+            <form id="form_postagem" method="post" onsubmit="return publicar()">
+                <label>
+                    <span id="titulo">Título:</span>
+                    <br>
+                    <input name="titulo" id="titulo" maxlength="100" type="text">
+                </label>
+                <br>
+                <br>
+                <label>
+                    <span id="titulo">Descrição (máximo de 250 caracteres):</span>
+                    <br>
+                    <textarea name="descricao" id="textarea_descricao" maxlength="250" rows="5"></textarea>
+                </label>
+                <button>Enviar</button>
+            </form>
+        </div>
+
+        <h1>Mural de Comentários</h1>
+        <div class="comment_section">
+            <div class="div-results">
+                <div id="feed_container" class="feed-container">
+                </div>
             </div>
-        </div>
-
-        <div class="comment_section">
-            <span class="name" id="comment_name">Nome Usuário</span>
-            <span aria-placeholder="Escreva seu comentário">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum natus non exercitationem! Labore veniam mollitia porro harum quo deserunt. Cumque eius reprehenderit eum ipsum sit. Quis harum ipsum sit iure!</span>
-        </div>
-
-        <div class="comment_section">
-            <span class="name" id="comment_name">Nome Usuário</span>
-            <span aria-placeholder="Escreva seu comentário">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum natus non exercitationem! Labore veniam mollitia porro harum quo deserunt. Cumque eius reprehenderit eum ipsum sit. Quis harum ipsum sit iure!</span>
-        </div>
-
-        <div class="comment_section">
-            <span class="name" id="comment_name">Nome Usuário</span>
-            <span aria-placeholder="Escreva seu comentário">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum natus non exercitationem! Labore veniam mollitia porro harum quo deserunt. Cumque eius reprehenderit eum ipsum sit. Quis harum ipsum sit iure!</span>
         </div>
 
     </div>
