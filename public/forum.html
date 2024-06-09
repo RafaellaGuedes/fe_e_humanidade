@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style_forum.css">
-    <script src="./js/forum.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@100..900&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <script src="./js/forum.js"></script>
+    <script src="./js/main.js"></script>
     <title>Fé e Humanidade</title>
 </head>
 
@@ -20,18 +21,16 @@
             <h1>Fé e Humanidade</h1>
         </div>
         <div class="navbar">
-            <a href="index.html" onclick="logout()">Home</a>
-            <a href="index.html#article">Artigos</a>
-            <a href="index.html#game">Game</a>
-            <a href="index.html#about_me">Sobre mim</a>
-            <a href="login.html">Login</a>
-            <a href="cadastro.html" id="a_cadastro">Cadastro</a>
+            <a href="religioes.html">Religiões</a>
+            <a href="game.html">Game</a>
+            <a href="forum.html">Fórum</a>
+            <a href="index.html" id="main" onclick="logout()">Sair</a>
         </div>
     </div>
 
     <div class="page">
 
-        <h1>Publicar um comentário</h1>
+        <h1 class="publish">Publicar um comentário</h1>
         <div class="comment">
             <form id="form_postagem" method="post" onsubmit="return publicar()">
                 <label>
@@ -58,6 +57,17 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="footer">
+        <div class="logo">
+            <h2>Fé e Humanidade</h2>
+        </div>
+
+        <div class="contacts">
+            <span>GitHub: RafaellaGuedes</span>
+            <span>Linkedin: Rafaella Guedes</span>
+        </div>
     </div>
 
 </body>

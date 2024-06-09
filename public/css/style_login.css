@@ -135,6 +135,10 @@
         text-decoration: none;
     }
 
+    button:hover {
+        transform: scale(1.1);
+    }
+
     .button_cadastro {
         margin-top: 30px;
         justify-content: space-between;

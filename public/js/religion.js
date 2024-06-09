@@ -18,7 +18,7 @@ function confirm() {
 
         if (resposta.ok) {
             console.log(resposta);
-            window.location = "./game.html"
+            window.location = "./forum.html"
         } else {
             console.log('Erro na resposta:', resposta.statusText);
         }

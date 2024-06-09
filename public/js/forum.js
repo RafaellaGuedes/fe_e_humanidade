@@ -123,7 +123,3 @@ function deletar(idComentario) {
         console.log(`#ERRO: ${resposta}`);
     });
 }
-
-function logout() {
-    sessionStorage.clear();
-}
