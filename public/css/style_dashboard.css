@@ -16,7 +16,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: end;
-    box-shadow: 0rem 1rem 20px 0 rgba(0, 0, 0, 0.5);
+    position: fixed;
+    box-shadow: 0rem 1rem 12px 0 rgba(0, 0, 0, 0.3);
 }
 
 .header .logo {
@@ -71,7 +72,7 @@ a:hover {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
-    height: 88.6vh;
+    height: 100vh;
     padding: 50px;
     justify-content: space-between;
 }
@@ -83,7 +84,7 @@ a:hover {
     font-size: 25px;
     color: #36443f;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .religion_graphic {
@@ -93,7 +94,7 @@ a:hover {
     font-size: 25px;
     color: #36443f;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .religion_graphic canvas {

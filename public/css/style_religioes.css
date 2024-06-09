@@ -16,6 +16,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: end;
+    position: fixed;
+    box-shadow: 0rem 1rem 12px 0 rgba(0, 0, 0, 0.3);
 }
 
 .header .logo {
@@ -70,8 +72,9 @@ a:hover {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 78.8vh;
+    height: 87.8vh;
     padding: 50px;
 }
 

@@ -25,6 +25,7 @@ function login() {
         } else {
 
             console.log("Houve um erro ao tentar realizar o login!");
+            alert("Houve um erro ao tentar realizar o login, email e/ou senha inválido(s)!");
 
             resposta.text().then(texto => {
                 console.error(texto);
