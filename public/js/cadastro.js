@@ -43,9 +43,10 @@ function registrar() {
 
     alert("Email inválido")
 
-  }
+  } else {
 
-  fetch("/usuarios/cadastrar", {
+    
+    fetch("/usuarios/cadastrar", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -74,4 +75,5 @@ function registrar() {
       console.log(`#ERRO: ${resposta}`);
     });
     
+  }
 }

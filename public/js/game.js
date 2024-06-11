@@ -82,7 +82,6 @@ function start() {
     document.addEventListener('keydown', jump);
 }
 
-
 var name_religion = [
     "Protestantismo",
     "Catolicismo",
