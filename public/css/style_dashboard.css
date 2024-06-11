@@ -38,7 +38,7 @@
 .header a {
     padding: 15px;
     margin-right: 20px;
-    color: #EEE7DA;
+    color: #36443f;
     font-size: 23px;
     text-decoration: none;
     display: flex;
@@ -51,11 +51,10 @@ a:hover {
 }
 
 #main {
-    background-color: #455750;
+    background-color: #10867b;
     width: 110px;
     height: 35px;
     margin-right: 25px;
-    color: #EEE7DA;
     font-weight: bold;
     border-radius: 10px;
     align-items: center;

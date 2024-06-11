@@ -56,7 +56,7 @@ html {
 #navbar a {
     padding: 15px;
     margin-right: 20px;
-    color: #EEE7DA;
+    color: #36443f;
     font-size: 23px;
     text-decoration: none;
     display: flex;
@@ -70,9 +70,8 @@ a:hover {
 
 #a_cadastro {
     margin-right: 25px;
-    color: #EEE7DA;
     font-weight: bold;
-    background-color: #455750;
+    background-color: #10867b;
     border-radius: 10px;
     height: 10px;
     align-items: center;

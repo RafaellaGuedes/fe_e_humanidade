@@ -123,7 +123,7 @@ function game_over() {
 
     var religion_index = randomItem(name_religion);
 
-    religion_name.innerHTML = religion_index;
+    religion_name.innerHTML = `Você conhece o ${religion_index}?`;
     religion_exp.innerHTML = exp_religion[name_religion.indexOf(religion_index)];
 
 }
